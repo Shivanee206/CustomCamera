@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <SurfaceView
+            android:id="@+id/camerapreview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true" />
+        <ImageButton
+            android:id="@+id/takepicture"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:src="@drawable/button_shutter"
+            android:layout_gravity="left|top"
+            android:scaleType="fitXY"/>
+        <ImageButton
+            android:id="@+id/toggleBtn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:src="@drawable/button_switch"
+            android:layout_gravity="left|top"
+            android:layout_marginLeft="70dp"
+            android:scaleType="fitXY"/>
+    </FrameLayout>
+</LinearLayout>
+
+
